@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: #f4f7fc;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+}
+
+.app {
+  width: 100%;
+  max-width: 650px;
+}
+
+.mainHeading h1 {
+  text-align: center;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.subHeading h2 {
+  text-align: center;
+  color: #64748b;
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+.input {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input input[type="text"] {
+  flex: 1;
+  border: 1px solid #dbe3ec;
+  padding: 10px;
+  border-radius: 8px;
+  outline: none;
+}
+
+.input input[type="date"] {
+  border: 1px solid #dbe3ec;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.input i {
+  background: #2563eb;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-style: normal;
+  transition: 0.3s;
+}
+
+.input i:hover {
+  background: #1d4ed8;
+}
+
+.todos {
+  margin-bottom: 12px;
+}
+
+.todo {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.left p {
+  color: #1e293b;
+  font-weight: 600;
+}
+
+.left input[type="text"] {
+  padding: 8px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+.left input[type="date"] {
+  padding: 8px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+.right i {
+  color: #ef4444;
+  cursor: pointer;
+  font-style: normal;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.right i:hover {
+  transform: scale(1.1);
+}
+
+button {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 8px;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:last-child {
+  background: #f59e0b;
+  color: white;
+}
+
+.left button {
+  background: #10b981;
+  color: white;
+}
