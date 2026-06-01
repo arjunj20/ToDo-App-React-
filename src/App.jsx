@@ -29,9 +29,6 @@ const [editId, setEditId] = useState(null)
 const [editText, setEditText] = useState("")
 const [editDeadline, setEditDeadline] = useState("")
 
-const [num1, setNum1] = useState(0)
-const [num2, setNum2] = useState(0)
-const [ans, setAns] = useState(0)
 
 
 
@@ -173,23 +170,8 @@ const clear = () => {
         })
       }
       
-    </div>
+    </div>   
 
-    <input type="text" onChange={(e)=>{
-
-      setNum1(e.target.value)
-
-    }}/>
-    <input type="text" onChange={(e)=>{
-      setNum2(e.target.value)
-    }}/>
-    <button onClick={()=>{
-
-      setAns(num1+num2)
-
-    }}>add</button>
-
-    <div>{ans}</div>
    </>
   )
 }
